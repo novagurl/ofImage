@@ -5,6 +5,7 @@
 class ofApp : public ofBaseApp{
 
 	public:
+		int n;
 		void setup();
 		void update();
 		void draw();
@@ -25,7 +26,7 @@ class ofApp : public ofBaseApp{
 	private: 
 
                  ofImage img;
-                 int x, y, n;
+                 int x, y;
 	
  
     };
