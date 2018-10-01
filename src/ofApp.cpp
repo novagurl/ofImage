@@ -5,17 +5,15 @@
 void ofApp::setup(){
      auto name = std::getenv("myfile");
      auto filename = name? name: "input.jpg";
-
+	
      img.load(filename);
- 
+ 	
      x = abs(img.getWidth() - ofGetWidth())/2;
      y = abs(img.getHeight() - ofGetHeight())/2;
 
-     /*
-       (A)
+    
+cout<<"Hello from setup"<<endl;
 
-       n =  3 * img.getWidth() * img.getHeight();
-     */
 }
 
 
@@ -36,14 +34,12 @@ void ofApp::keyPressed(int key){
     if (key == 'i') 
           { 
  
-             /*  
-                (B)
-
-                for(int i = 0 ;i < n; i++)
-                 img.setColor(i, img.getColor(i).invert());
-             */ 
+           
            img.update();
            }//end if
+
+cout<<"A key has been pressed"<< "key"<<endl;
+cout<<"i has been pressed"<< "i"<<endl;
 }
 
 
