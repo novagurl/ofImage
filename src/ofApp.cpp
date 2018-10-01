@@ -33,13 +33,18 @@ void ofApp::keyPressed(int key){
 
     if (key == 'i') 
           { 
-
- 	cout<<"A key has been pressed"<< key <<endl;
-	cout<<"i has been pressed"<< i <<endl;
-           
+		
+	cout<<"i has been pressed"<< key <<endl;
            img.update();
            }//end if
 
+
+    else
+	{
+
+	cout<<"A key has been pressed"<< key <<endl;
+
+	}
 
 }
 
